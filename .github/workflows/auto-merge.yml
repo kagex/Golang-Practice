@@ -3,13 +3,17 @@ name: auto-merge for exercism-solutions-syncer
 on:
   pull_request_target:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   enable-automerge:
     runs-on: ubuntu-latest
+    if: github.actor == 'exercism-solutions-syncer[bot]'
     steps:
-      - name: Enable automerge for exercism-solutions-syncer
-        uses: daneden/enable-automerge-action@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          allowed-author: "exercism-solutions-syncer[bot]"
-          merge-method: MERGE
+      - name: Enable auto-merge
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --auto --merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

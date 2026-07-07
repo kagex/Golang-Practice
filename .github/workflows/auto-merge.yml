@@ -1,0 +1,15 @@
+name: auto-merge for exercism-solutions-syncer
+
+on:
+  pull_request_target:
+
+jobs:
+  enable-automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable automerge for exercism-solutions-syncer
+        uses: daneden/enable-automerge-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          allowed-author: "exercism-solutions-syncer[bot]"
+          merge-method: MERGE

@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	//"math"
 	"strconv"
 )
 
@@ -11,7 +10,7 @@ func main() {
 	priceStr, quantityStr := "19.9", "19"
 
 	// Вызываем функцию для вычисления полной стоимости и выводим результат
-	fmt.Printf("Полная стоимость товаров:%.2f ", totalPrice(priceStr, quantityStr))
+	fmt.Printf("Полная стоимость товаров: %.2f", totalPrice(priceStr, quantityStr))
 }
 
 func totalPrice(priceStr, quantityStr string) (totalPrice float64) {
@@ -22,5 +21,4 @@ func totalPrice(priceStr, quantityStr string) (totalPrice float64) {
 
 	// Возвращаем результат
 	return price * quantity
-
 }

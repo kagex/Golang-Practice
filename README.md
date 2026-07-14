@@ -1,4 +1,4 @@
-# Golang-   Practice
+# Golang - Practice
 Репозиторий содержит мою практику на языке Go.
 Так же репозиторий содержит решения упражнений с платформы [Exercism](https://exercism.org/tracks/go).
 

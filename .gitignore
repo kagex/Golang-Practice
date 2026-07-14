@@ -25,7 +25,7 @@ _gopath/
 *.swp
 *.swo
 *~
-.gigacode/
+.gigacode*
 
 
 # OS files

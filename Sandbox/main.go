@@ -9,12 +9,13 @@ import (
 func main() {
 	fmt.Println("Случайное целое число (integer) равно:", randomInteger(-100, 100))
 
-	fmt.Println("Случайное вещественное число (float) равно:", randomFloat(-5, 100))
-	fmt.Printf("Случайное вещественное число (float), округленное до двух знаков после запятой равно: %.2f\n", randomFloat(-5, 100))
+	float := randomFloat(-5, 100)
+	fmt.Println("\nСлучайное вещественное число (float) равно:", float)
+	fmt.Printf("Случайное вещественное число (float), округленное до двух знаков после запятой равно: %.2f\n", float)
 
-	fmt.Println("Целая часть цены за батон:", integerPrice(100.435))
+	fmt.Println("\nЦелая часть цены за батон:", integerPrice(100.435))
 
-	fmt.Println("Цена товара со скидкой", discount(100, 11.111))
+	fmt.Println("\nЦена товара со скидкой", discount(100, 11.111))
 }
 
 func randomInteger(min, max int) int { //Функция возвращает случайно сгенерированое целочисленное число (integer)

@@ -1,4 +1,5 @@
 # Golang - Practice
+
 Репозиторий содержит мою практику на языке Go.
 Так же репозиторий содержит решения упражнений с платформы [Exercism](https://exercism.org/tracks/go).
 
@@ -10,7 +11,6 @@
 ## Структура репозитория
 
 ```
-.
 ├── solutions/go/               # Основные решения упражнений Exercism в треке Go
 │   ├── blackjack/
 │       ├── 1 
@@ -26,6 +26,7 @@
 │
 ├── Practice/                  # Дополнительные самостоятельные практики
 │
+├── Полезные материалы
 ├── .github/workflows/         # GitHub Actions workflows
 ├── .gitignore
 └── README.md
